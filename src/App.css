@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+body {
+  box-sizing: border-box;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  background-color: rgb(242, 242, 242);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.background img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.background {
+  position: relative;
   min-height: 100vh;
+}
+.loginValidation {
   display: flex;
+
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+}
+.loginValidation h1 {
+  font-size: 32px !important;
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+.loginValidation {
+  padding-right: 16px;
+}
+.loginValidation input {
+  width: 100% !important;
 }
 
-.App-link {
-  color: #61dafb;
+.loginValidation label {
+  display: block;
+  margin: 10px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* #6E442F */
+
+.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+  width: 100%;
+}
+
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  margin: 0 !important;
+}
+
+@media screen and (max-width: 900px) {
+  .s {
+    display: none !important;
   }
-  to {
-    transform: rotate(360deg);
+  .loginValidation {
+    align-items: center;
+    padding: 0 16px;
+  }
+  .MuiFormControl-root.css-1nrlq1o-MuiFormControl-root {
+    width: 100%;
   }
 }
